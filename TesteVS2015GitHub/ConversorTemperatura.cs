@@ -1,15 +1,17 @@
-﻿namespace TesteVS2015GitHub
+﻿using System;
+
+namespace TesteVS2015GitHub
 {
     public static class ConversorTemperatura
     {
         public static double FahrenheitParaCelsius(double temperatura)
         {
-            return 0;
+            return Math.Round((temperatura - 32) / 1.8, 2);
         }
 
         public static double FahrenheitParaKelvin(double temperatura)
         {
-            return 0;
+            return Math.Round(((temperatura - 32) / 1.8) + 273.15, 2);
         }
     }
 }
